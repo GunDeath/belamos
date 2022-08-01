@@ -1,0 +1,125 @@
+  <div>
+    <div class="header__wrapper">
+      <div class="top__header-menu ">
+        <div class="container">
+          <ul class="top__list display__flex">
+            <li class="list__item">
+              <a href="/index/oplata/0-12" class="list__link">Оплата</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/dostavka/0-6" class="list__link">Доставка</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/kontakty_belamos_v_moskve/0-3" class="list__link">Контакты</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/garantii/0-8" class="list__link">Гарантии</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/dokumentacija_belamos/0-5" class="list__link">Документы</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/montazh_oborudovanija/0-9" class="list__link">Монтаж</a>
+            </li>
+            <li class="list__item">
+              <a href="/index/optovikam/0-7" class="list__link">Оптовикам</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="top__header_main-section">
+        <div class="container">
+          <div class="header__info-block display__flex">
+            <div class="contact__info-block">
+              <div class="contact__info-item">
+                <div class="icon__img">
+                  <img src="/statii/telephon.png" alt="">
+                </div>
+                <a href="tel: 84958450135" class="contact__link">8 (495) 845-01-35</a>
+              </div>
+              <div class="contact__info-item">
+                <div class="icon__img">
+                  <img src="/statii/email.png" alt="">
+                </div>
+                <a href="mailto: belamos@belampro.ru" class="contact__link">belamos@belampro.ru</a>
+              </div>
+              <div class="contact__info-item">
+                <div class="icon__img">
+                  <img src="/statii/clock_ico.png" alt="" class="img__ico">
+                </div>
+                <p class="time__block">Работаем с 9:00 до 01:00 <br> Без выходных</p>
+              </div>
+            </div>
+            <div class="header__logo-block">
+              <a href="/" class="img__link">
+                <img src="/LogoBelamos700.jpg" alt="" class="logo__img">
+              </a>
+            </div>
+            <div class="header__search-section display__flex">
+              <div class="search__block">
+                <?if($SEARCH_FORM$)?>
+                <form id="search-form" onsubmit="this.sfSbm.disabled=true" method="post"
+                      action="/shop/search">
+                  <label for="search">Поиск</label>
+                  <input id="search" type="search" pattern=".*\S.*" required class="search-keyword"
+                         name="query" placeholder="Поиск">
+                  <span class="caret"></span>
+                  <input type="submit" class="search-submit" name="sfSbm" value="Найти" title="Искать">
+                </form>
+                <?endif?>
+              </div>
+              <?if($BASKET$)?>
+              <div class="card__block">
+                <a href="/shop/checkout">
+                  <img src=/fotostatii/korzinagif.gif alt="" class="shopping__img">
+                </a>
+                <div class="count__block">
+                  $BASKET$
+                </div>
+              </div>
+              <?endif?>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navigation__menu">
+        <div class="mini__logo disable">
+          <img src="./src/img/background_logo.png" alt="">
+        </div>
+        <ul class="nav__menu-list display__flex">
+          <li class="nav__item">
+            <a href="/" class="nav__link nav__active">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/skvazhinnye-nasosy"
+               class="nav__link nav__active">Скважинные</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/nasosnye-stancii" class="nav__link nav__active">Насосные
+              станции</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/kolodeznye-nasosy-belamos" class="nav__link nav__active">Колодезные</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/drenazhnye-nasosy"
+               class="nav__link nav__active">Дренажные</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/samovsasyvajushhie-nasosy" class="nav__link nav__active">Самовсасывающие</a>
+          </li>
+          <li class="nav__item">
+            <a href="/shop/cirkuljacionnye-nasosy-belamos"
+               class="nav__link nav__active">Циркуляционные</a>
+          </li>
+        </ul>
+        <div class="hamburger__menu disable" id="hamburgerMenuMain">
+          <div class="hamburger__rows"></div>
+          <div class="hamburger__rows"></div>
+          <div class="hamburger__rows"></div>
+        </div>
+      </nav>
+    </div>
+  </div>

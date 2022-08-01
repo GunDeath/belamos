@@ -1,0 +1,63 @@
+<header>
+    <div>
+
+        <div class="top-content">
+            <p><a href="/"><img class="logoimg" alt="Беламос логотип" id="wrapper" src="/LogoBelamos700.jpg" style="float: left;" /></a></p>
+            <div class="top-contact">
+                <table cellpadding="5px">
+                    <tr>
+                        <td>
+                            <b>Розничный отдел</b></br>
+                            <img src="/statii/geo_ico.png" alt="">Москва
+                        </td>
+                        <td>
+                            <p><img src="/statii/telephon.png" alt="">&nbsp;<span style="font-size: 12pt;"><b><a class="mgo-number" href="tel:84958450135">8 (495) 845-01-35</a></b></span><br />
+                                <img src="/statii/email.png" alt="">&nbsp;<b>belamos@belampro.ru</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/statii/dostavka_ico.png" alt=""><a href="/index/dostavka/0-6">Доставка</a></br>
+                            <img src="/statii/oplata_ico.png" alt=""><a href="/index/oplata/0-12">Оплата</a>
+                        </td>
+                        <td>
+                            <img src="/statii/clock_ico.png" alt="">&nbsp;Работаем с 9:00 до 01:00<br />
+                            Без выходных<br />
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <div class="top-basket">
+                <?if($BASKET$)?>
+                <div class="block">
+                    <div class="blocktitle"><img src="/fotostatii/korzinagif.gif" border="0" alt="" /><!-- <bt> --><!--<s5441>-->Корзина<!--</s>--><!-- </bt> --></div>
+                    <div class="blockcontent">
+                        <!-- <bc> -->$BASKET$<!-- </bc> -->
+                    </div>
+                </div>
+                <?endif?>
+            </div>
+
+        </div>
+
+        <div id="top" class="clearfix">
+            <div class="t-container-top">
+
+                <?if($SEARCH_FORM$)?>
+                <div id="show-search" class="show-search"></div>
+                <div id="b-search" class="b-search pull-right b-search-min">
+                    <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/index/poisk_po_sajtu_belamos/0-10','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Yandex Site Search #2330553','suggest':true,'target':'_blank','tld':'ru','type':2,'usebigdictionary':true,'searchid':2330553,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'','input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_blank" accept-charset="utf-8"><input type="hidden" name="searchid" value="2330553"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div><style>.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+                </div>
+                <?endif?>
+                <div id="show-menu" class="show-menu"></div>
+
+                <nav>
+                    <!-- <sblock_nmenu> -->
+                    <?if($NMENU_1$)?><!-- <bc> -->$NMENU_1$<!-- </bc> --><?endif?>
+                    <!-- </sblock_nmenu> -->
+                </nav>
+            </div>
+        </div>
